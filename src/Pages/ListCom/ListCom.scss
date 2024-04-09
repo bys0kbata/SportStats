@@ -1,0 +1,41 @@
+.ListCom{
+    text-align: center;
+    color:#0a45bbde;
+    table{
+        margin: auto;
+        margin-bottom:1.4vh;
+        border-radius: 20px;
+        border-style: solid;
+        border-color: #166a7d;
+        padding: 1vh;
+        background-color: #9BEBBB;
+        color: #0a45bbde;
+        tr{
+            margin: 1.3vw;
+            width: max-content;
+            th{
+                margin: 1.3vh;
+                padding: 1.3vh;
+            }
+            td{
+                margin: 1.3vh;
+                img{
+                    width: 5vh;
+                }
+                button{
+                    border-radius: 20px;
+                    border-style: solid;
+                    background-color: white;
+                    border-color: #166a7d;
+                }
+                button:hover{
+                    background-color: #166a7d;
+                }
+                button:active{
+                    background-color: #7d1616;
+                    border-color: #7d1616;
+                }
+            }
+        }
+    }
+}
