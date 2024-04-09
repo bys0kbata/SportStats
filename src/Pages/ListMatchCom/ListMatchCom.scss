@@ -1,0 +1,29 @@
+.ListMatchCom{
+    margin: auto;
+    width: max-content;
+    h1{
+        text-align: center;
+        color:#0a45bbde;
+    }
+    table{
+        margin: auto;
+        margin-bottom:1.4vh;
+        border-radius: 20px;
+        border-style: solid;
+        border-color: #166a7d;
+        padding: 1vh;
+        background-color: #9BEBBB;
+        color: #0a45bbde;
+        tr{
+            margin: 1.3vw;
+            width: max-content;
+            th{
+                margin: 1.3vh;
+                padding: 1.3vh;
+            }
+            td{
+                margin: 1.3vh;
+            }
+        }
+    }
+}

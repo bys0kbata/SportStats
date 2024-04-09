@@ -5,18 +5,18 @@ import axios from "axios"
 export default function ListMatchComr(){
     const href = window.location.href;
     const idCom= href.match(/\d+$/);
-    const [DateFrom, setDF]= useState();
-    const [DateTo, setDT]= useState();
-    const [data,setData] = useState();
+    //const [DateFrom, setDF]= useState();
+    //const [DateTo, setDT]= useState();
+    const [name,setname] = useState();
     const [dataMatch,setDM] = useState([]);
-    const [Vis, setVis]=useState(false);
+   // const [Vis, setVis]=useState(false);
     const config =   {headers: {
         'X-Auth-Token':'1fe2051c3808448ca25c9cae41e88191'  
       }}
     useEffect(()=>{
         axios.get(`https://api.football-data.org/v4/teams/${idCom}`,config)
         .then((req)=>{
-            setData(req.data.name);
+            setname(req.data.name);
         })
         axios.get(`https://api.football-data.org/v4/teams/${idCom}/matches`,config)
         .then((req)=>{
@@ -24,8 +24,8 @@ export default function ListMatchComr(){
         })
       },[])
     return(
-        <div className="ListMatchLiga">
-            <h1>Матчи Команды {data}</h1>
+        <div className="ListMatchCom">
+            <h1>Матчи Команды {name}</h1>
             {/* <div className="TimeData">
                 <h2>Временной промежуток</h2>
                 <h3>Выберите начало</h3>
@@ -48,7 +48,7 @@ export default function ListMatchComr(){
                             <tr key={one.id}>
                                 <td>{one.homeTeam?.name}</td>
                                 <td>{one.awayTeam?.name}</td>
-                                <td>{one.score.fullTime.home}:{one.score.fullTime.away}</td>
+                                <td>{one.score.fullTime.home}-{one.score.fullTime.away}</td>
                                 <td>{one.utcDate}</td>
                             </tr>
                         )
