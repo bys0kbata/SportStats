@@ -1,6 +1,49 @@
 .ListMatchLiga{
     margin: auto;
     width: max-content;
+    .TimeData{
+        display:flex;
+        flex-direction: column;
+        color: #166a7d;
+        border-color: #0a45bbde;
+        border-style: solid;
+        padding: 2vh;
+        margin: 2vh;
+        border-radius: 20px;
+        background-color: #9BEBBB;
+        h2{
+            text-align: center;
+        }
+        input{
+            width: max-content;
+            border-radius: 20px;
+            background-color: white;
+            padding: 0.5vh;
+            border-color: #0a45bbde;
+            border-style: solid;
+            border-width: 3px;
+        }
+        button{
+            font-size: 1.4vh;
+            width: max-content;
+            color: #166a7d;
+            margin: 1vh;
+            border-radius: 20px;
+            border-style: solid;
+            background-color: white;
+            border-color: #166a7d;
+            padding: 0.5vh;
+        }
+        button:hover{
+            background-color: #166a7d;
+            color:white;
+        }
+        button:active{
+            background-color: #7d1616;
+            border-color: #7d1616;
+            color:white;
+        }
+    }
     h1{
         text-align: center;
         color:#0a45bbde;
