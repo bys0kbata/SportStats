@@ -1,0 +1,72 @@
+.Profile{
+    .ProfileCom{
+        display: flex;
+        flex-direction: row; 
+        align-items:center ;
+        margin-bottom:4vh;
+        margin-top:4vh;
+        div{
+            width: max-content;
+            height: max-content;
+            margin: auto;
+            color: #166a7d;
+            font-size: 1.5vh;
+            text-align: center;
+        }
+        .Text{
+            margin: auto;
+            border-radius: 20px;
+            border-style: solid;
+            border-color: rgb(191, 67, 67);
+            padding: 1vh;
+            background-color: #9BEBBB;
+            color: rgb(191, 67, 67);
+            text-align: center;
+            margin: auto;
+            font-size: 1.5vh;
+        }
+    }
+    table{
+        margin: auto;
+        margin-bottom:1.4vh;
+        border-radius: 20px;
+        border-style: solid;
+        border-color: #166a7d;
+        padding: 1vh;
+        background-color: #9BEBBB;
+        color: #0a45bbde;
+        text-align: center;
+        thead{
+            font-size: 5vh;
+        }
+        tr{
+            margin: 1.3vw;
+            width: max-content;
+            th{
+                margin: 1.3vh;
+                padding: 1.3vh;
+                font-size: 2vh;
+            }
+            td{
+                font-size: 2vh;
+                color: #3c7af6de;
+                margin: 1.3vh;
+                button{
+                    margin: 1vh;
+                    border-radius: 20px;
+                    font-size: 1.6vh;
+                    border-style: solid;
+                    background-color: white;
+                    border-color: #166a7d;
+                }
+                button:hover{
+                    background-color: #166a7d;
+                }
+                button:active{
+                    background-color: #7d1616;
+                    border-color: #7d1616;
+                }
+            }
+        }
+    }
+}

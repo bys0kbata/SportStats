@@ -21,17 +21,22 @@ export default function ProfileComm(){
         })
     },[])
     return(
-        <div className="ProfilePlayer">
+        <div className="Profile">
             <div className="ProfileCom">
-            <img src={data.crest}  />
-                <div><h4>Название: {data.name}</h4>
-                <h4>Адрес: {data.address}</h4>
-                <h4>Тренер: {data.coach?.name}</h4>
-                <h4>Веб-сайт: {data.website}</h4>
-                <h4>Цвета команды: {data.clubColors}</h4></div>
+            <div>
+                <h4>Эмблема</h4>
+                <img src={data.crest}  />
+            </div>
+                <div className="Text">
+                    <h4>Название: {data.name}</h4>
+                    <h4>Адрес: {data.address}</h4>
+                    <h4>Тренер: {data.coach?.name}</h4>
+                    <h4>Веб-сайт: {data.website}</h4>
+                    <h4>Цвета команды: {data.clubColors}</h4>
+                </div>
             </div>
             <table>
-                <thead>Игроки команды</thead>
+                <thead align="center">Игроки команды</thead>
                 <tr>
                     <th> ФИО</th>
                     <th> Позиция</th>

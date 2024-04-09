@@ -5,10 +5,10 @@ export default function Main(){
     const nav = useNavigate();
     return(<div className="Main">
         <div>
-            <h3>Смотри статистику матчей только у нас!!!!</h3>
+            <h1>Смотри статистику матчей только у нас!!!!</h1>
             <button onClick={()=>{nav("/listlig");}}>Смотреть список лиг</button>
             <button onClick={()=>{nav("/listcom");}}>Смотреть список команд</button>
         </div>
-        <img />
+        <img src="public\soccer.jpg"/>
     </div>)
 }
