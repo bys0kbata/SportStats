@@ -3,7 +3,7 @@
     flex-direction: row;
     align-items: center;
     justify-self: center;
-    .Text{
+    div{
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -27,6 +27,7 @@
             border-style: solid;
             background-color: white;
             border-color: #166a7d;
+            padding: 0.5vh;
         }
         button:hover{
             background-color: #166a7d;

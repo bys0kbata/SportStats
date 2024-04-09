@@ -1,4 +1,24 @@
 .Profile{
+    button{
+        font-size: 1.4vh;
+        width: max-content;
+        color: #166a7d;
+        margin: 1vh;
+        border-radius: 20px;
+        border-style: solid;
+        background-color: white;
+        border-color: #166a7d;
+        padding: 0.5vh;
+    }
+    button:hover{
+        background-color: #166a7d;
+        color:white;
+    }
+    button:active{
+        background-color: #7d1616;
+        border-color: #7d1616;
+        color:white;
+    }
     .ProfileCom{
         display: flex;
         flex-direction: row; 
@@ -24,7 +44,16 @@
             text-align: center;
             margin: auto;
             font-size: 1.5vh;
+            button{
+                color: #7d1616;
+                border-color: #7d1616;
+            }
+            button:hover{
+                background-color: #7d1616;
+                color:white;
+            }
         }
+        
     }
     table{
         margin: auto;
@@ -51,21 +80,6 @@
                 font-size: 2vh;
                 color: #3c7af6de;
                 margin: 1.3vh;
-                button{
-                    margin: 1vh;
-                    border-radius: 20px;
-                    font-size: 1.6vh;
-                    border-style: solid;
-                    background-color: white;
-                    border-color: #166a7d;
-                }
-                button:hover{
-                    background-color: #166a7d;
-                }
-                button:active{
-                    background-color: #7d1616;
-                    border-color: #7d1616;
-                }
             }
         }
     }

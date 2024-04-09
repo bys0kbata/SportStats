@@ -6,6 +6,7 @@ import ProfilePlayer from "../Pages/ProfilePlayer/ProfilePlayer";
 import ProfileComm from "../Pages/ProfileCom/ProfileCom";
 import ListMatchComr from "../Pages/ListMatchCom/ListMatchCom";
 import ListMatchLiga from "../Pages/ListMatchLiga/ListMatchLiga";
+import NotFound from "../Pages/Not Found/NotFound";
 
 export default function RouterApp(){
     return(
@@ -15,9 +16,9 @@ export default function RouterApp(){
             <Route path="/listcom" element={<ListCom />} />
             <Route path="/profileplayer/*" element={<ProfilePlayer />} />
             <Route path="/profilecomm/*" element={<ProfileComm />} />
-            <Route path="/listmatchlig" element={<ListMatchLiga />} />
-            <Route path="/listmatchcomm" element={<ListMatchComr />} />
-            <Route path="/*" element={<ListMatchComr />} />
+            <Route path="/listmatchlig/*" element={<ListMatchLiga />} />
+            <Route path="/listmatchcomm/*" element={<ListMatchComr />} />
+            <Route path="/*" element={<NotFound />} />
         </Routes>
     )
 }

@@ -33,6 +33,7 @@ export default function ProfileComm(){
                     <h4>Тренер: {data.coach?.name}</h4>
                     <h4>Веб-сайт: {data.website}</h4>
                     <h4>Цвета команды: {data.clubColors}</h4>
+                    <button onClick={()=>{nav("/listmatchcomm/"+data.id)}}>Посмотреть расписание</button>
                 </div>
             </div>
             <table>

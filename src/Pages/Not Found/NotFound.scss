@@ -1,0 +1,38 @@
+.NotFound{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    margin: 6vh;
+    margin: auto;
+    margin-top:16vh ;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: #166a7d;
+    padding: 2.5vh;
+    background-color: #9BEBBB;
+    color: #0a45bbde;
+    font-size: 1.4vh;
+    width: max-content;
+    height: max-content;
+    button{
+        font-size: 1.4vh;
+        width: max-content;
+        color: #166a7d;
+        margin: 1vh;
+        border-radius: 20px;
+        border-style: solid;
+        background-color: white;
+        border-color: #166a7d;
+        padding: 0.5vh;
+    }
+    button:hover{
+        background-color: #166a7d;
+        color:white;
+    }
+    button:active{
+        background-color: #7d1616;
+        border-color: #7d1616;
+        color:white;
+    }
+}
