@@ -14,3 +14,5 @@ Currently, two official plugins are available:
     4) npm i sass
 Запустить веб-приложение:
     npm run dev
+Вставить ваш ключ от API монжо в файле:
+    ./config.jsx
