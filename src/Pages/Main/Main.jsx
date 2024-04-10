@@ -3,6 +3,7 @@ import "./Main.scss"
 
 export default function Main(){
     const nav = useNavigate();
+    
     return(<div className="Main">
         <div>
             <h1>Смотри статистику матчей только у нас!!!!</h1>
