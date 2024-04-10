@@ -3,9 +3,10 @@ import "./ListCom.scss"
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
 import { TOKEN } from "../../../config";
+import Loader from "../Loader/Loader";
 
 export default function ListCom(){
-    const [listComm,setLL] = useState([]);
+    const [listComm,setLL] = useState(null);
     const [CountComm, setCL] = useState();
     const nav = useNavigate();
     const config =   {headers: {
@@ -20,6 +21,8 @@ export default function ListCom(){
 },[])
 
     return(
+        <div>
+            {listComm ?
         <div className="ListCom">
             <h2>Список Команд</h2>
             <h3>Количество команд: {CountComm}</h3>
@@ -51,5 +54,6 @@ export default function ListCom(){
                 }
             </table>
         </div>
+        : <Loader />}</div>
     )
 }

@@ -2,12 +2,13 @@ import { useEffect, useState } from "react";
 import "./ProfileCom.scss"
 import { useNavigate } from "react-router-dom";
 import axios from "axios";
+import Loader from "../Loader/Loader";
 
 export default function ProfileComm(){
     const href = window.location.href;
     const idCom= href.match(/\d+$/);
-    const [data, setData]= useState([]);
-    const [squad, setSquad]= useState([]);
+    const [data, setData]= useState(null);
+    const [squad, setSquad]= useState(null);
     const nav = useNavigate();
     const config =   {headers: {
         'X-Auth-Token':'1fe2051c3808448ca25c9cae41e88191'  
@@ -21,6 +22,8 @@ export default function ProfileComm(){
         })
     },[])
     return(
+        <div>
+            {data ?
         <div className="Profile">
             <div className="ProfileCom">
             <div>
@@ -54,7 +57,7 @@ export default function ProfileComm(){
                     })}
                     
             </table>
-        </div>
+        </div>: <Loader />}</div>
     )
 
 

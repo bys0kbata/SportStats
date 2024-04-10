@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react"
 import "./ListMatchCom.scss"
 import axios from "axios"
+import { TOKEN } from "../../../config";
+import Loader from "../Loader/Loader";
 
 export default function ListMatchComr(){
     const href = window.location.href;
@@ -8,10 +10,10 @@ export default function ListMatchComr(){
     //const [DateFrom, setDF]= useState();
     //const [DateTo, setDT]= useState();
     const [name,setname] = useState();
-    const [dataMatch,setDM] = useState([]);
+    const [dataMatch,setDM] = useState(null);
    // const [Vis, setVis]=useState(false);
     const config =   {headers: {
-        'X-Auth-Token':'1fe2051c3808448ca25c9cae41e88191'  
+        'X-Auth-Token':TOKEN
       }}
     useEffect(()=>{
         axios.get(`https://api.football-data.org/v4/teams/${idCom}`,config)
@@ -24,6 +26,8 @@ export default function ListMatchComr(){
         })
       },[])
     return(
+        <div>
+            {dataMatch ?
         <div className="ListMatchCom">
             <h1>Матчи Команды {name}</h1>
             {/* <div className="TimeData">
@@ -56,5 +60,6 @@ export default function ListMatchComr(){
                 }
             </table>
         </div>
+        : <Loader />}</div>
     )
 }

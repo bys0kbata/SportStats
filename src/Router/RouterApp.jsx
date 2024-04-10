@@ -7,7 +7,6 @@ import ProfileComm from "../Pages/ProfileCom/ProfileCom";
 import ListMatchComr from "../Pages/ListMatchCom/ListMatchCom";
 import ListMatchLiga from "../Pages/ListMatchLiga/ListMatchLiga";
 import NotFound from "../Pages/Not Found/NotFound";
-import AboutMe from "../Pages/AbouteMe/AbouteMe";
 
 export default function RouterApp(){
     return(

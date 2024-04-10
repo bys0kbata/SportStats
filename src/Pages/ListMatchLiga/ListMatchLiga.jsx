@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import "./ListMatchLiga.scss"
 import axios from "axios"
+import Loader from "../Loader/Loader";
 
 export default function ListMatchLiga(){
     const href = window.location.href;
@@ -30,6 +31,8 @@ export default function ListMatchLiga(){
         }
     }
     return(
+        <div>
+            {data ?
         <div className="ListMatchLiga">
             <h1>Матчи Лиги {data}</h1>
             <div className="TimeData">
@@ -62,5 +65,6 @@ export default function ListMatchLiga(){
                 }
             </table>
         </div>
+        : <Loader />}</div>
     )
 }

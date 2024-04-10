@@ -4,9 +4,10 @@ import axios from "axios"
 import { useState } from "react"
 import { useNavigate } from "react-router-dom";
 import { TOKEN } from "../../../config";
+import Loader from "../Loader/Loader";
 
 export default function ListLig(){
-    const [listLigs,setLL] = useState([]);
+    const [listLigs,setLL] = useState(null);
     const [CountLigs, setCL] = useState();
     const nav = useNavigate();
     const config =   {headers: {
@@ -21,6 +22,8 @@ export default function ListLig(){
 },[])
 
     return(
+        <div>
+            {listLigs ?
         <div className="ListLig">
             <h2>Список Лиг</h2>
             <h3>Количество лиг:{CountLigs}</h3>
@@ -48,6 +51,7 @@ export default function ListLig(){
                 }
             </table>
         </div>
+        : <Loader />}</div>
     )
 
 }

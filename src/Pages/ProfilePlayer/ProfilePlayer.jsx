@@ -3,11 +3,12 @@ import "./ProfilePlayer.scss"
 import axios from "axios";
 import { TOKEN } from "../../../config";
 import { useNavigate } from "react-router-dom";
+import Loader from "../Loader/Loader";
 
 export default function ProfilePlayer(){
     const href = window.location.href;
     const idPers= href.match(/\d+$/);
-    const [data, setData]= useState([]);
+    const [data, setData]= useState(null);
     const nav = useNavigate();
     const config =   {headers: {
         'X-Auth-Token':TOKEN 
@@ -20,6 +21,8 @@ export default function ProfilePlayer(){
         })
     },[])
     return(
+        <div>
+            {data ?
         <div className="ProfilePlayer">
             <div className="Profile">
                 <h4>Имя: {data.name}</h4>
@@ -36,6 +39,7 @@ export default function ProfilePlayer(){
             </div>
 
         </div>
+        : <Loader />}</div>
     )
 
 }
