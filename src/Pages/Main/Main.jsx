@@ -8,7 +8,6 @@ export default function Main(){
             <h1>Смотри статистику матчей только у нас!!!!</h1>
             <button onClick={()=>{nav("/listlig");}}>Смотреть список лиг</button>
             <button onClick={()=>{nav("/listcom");}}>Смотреть список команд</button>
-            <button onClick={()=>{nav("/aboutme");}}>Обо мне</button>
         </div>
         <img src="public\soccer.jpg"/>
     </div>)

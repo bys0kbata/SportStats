@@ -19,7 +19,6 @@ export default function RouterApp(){
             <Route path="/profilecomm/*" element={<ProfileComm />} />
             <Route path="/listmatchlig/*" element={<ListMatchLiga />} />
             <Route path="/listmatchcomm/*" element={<ListMatchComr />} />
-            <Route path="/aboutme/*" element={<AboutMe />} />
             <Route path="/*" element={<NotFound />} />
         </Routes>
     )
