@@ -2,8 +2,8 @@
 
 Установить необходимые библиотеки в директорий проекта:
      + cd ./SportStats/
-     + npm i
-  + npm i react-router-dom
+     * npm i
+  - npm i react-router-dom
     +npm i axios
      +npm i sass
 Запустить веб-приложение:
