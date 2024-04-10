@@ -1,12 +1,12 @@
 <h1 align="center"> Sport Stats</h3>
 
 <p>Установить необходимые библиотеки в директорий проекта:</p>
-     1. cd ./SportStats/
-     2. npm i
-     3. npm i react-router-dom
-     4. npm i axios
-     5. npm i sass
-Запустить веб-приложение:
-    npm run dev
-Вставить ваш ключ от API монжо в файле:
-    +./config.jsx
+     <p> 1. cd ./SportStats/ </p>
+     <p> 2. npm i </p>
+     <p> 3. npm i react-router-dom </p>
+     <p> 4. npm i axios </p>
+     <p> 5. npm i sass </p>
+<p> Запустить веб-приложение: </p>
+    <p> npm run dev </p>
+<p> Вставить ваш ключ от API монжо в файле: </p>
+    <p> ./config.jsx </p>
